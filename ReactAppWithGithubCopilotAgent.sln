@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactappwithgithubcopilotagent.client", "reactappwithgithubcopilotagent.client\reactappwithgithubcopilotagent.client.esproj", "{02B80794-CCC7-1F4D-5EBE-266F95ED37AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactAppWithGithubCopilotAgent.Server", "ReactAppWithGithubCopilotAgent.Server\ReactAppWithGithubCopilotAgent.Server.csproj", "{51A4F82E-42A0-48D3-FB7A-B6BEE4EF3A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactAppWithGithubCopilotAgent.AppHost", "ReactAppWithGithubCopilotAgent.AppHost\ReactAppWithGithubCopilotAgent.AppHost.csproj", "{AE17C960-53FD-4678-ACDF-417B4955F63D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactAppWithGithubCopilotAgent.ServiceDefaults", "ReactAppWithGithubCopilotAgent.ServiceDefaults\ReactAppWithGithubCopilotAgent.ServiceDefaults.csproj", "{98BA099A-1DDA-8C50-D587-21FD16A80E12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02B80794-CCC7-1F4D-5EBE-266F95ED37AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B80794-CCC7-1F4D-5EBE-266F95ED37AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B80794-CCC7-1F4D-5EBE-266F95ED37AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B80794-CCC7-1F4D-5EBE-266F95ED37AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A4F82E-42A0-48D3-FB7A-B6BEE4EF3A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A4F82E-42A0-48D3-FB7A-B6BEE4EF3A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A4F82E-42A0-48D3-FB7A-B6BEE4EF3A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A4F82E-42A0-48D3-FB7A-B6BEE4EF3A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE17C960-53FD-4678-ACDF-417B4955F63D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE17C960-53FD-4678-ACDF-417B4955F63D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE17C960-53FD-4678-ACDF-417B4955F63D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE17C960-53FD-4678-ACDF-417B4955F63D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98BA099A-1DDA-8C50-D587-21FD16A80E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98BA099A-1DDA-8C50-D587-21FD16A80E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98BA099A-1DDA-8C50-D587-21FD16A80E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98BA099A-1DDA-8C50-D587-21FD16A80E12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C99A8166-A186-44BD-83F9-10DEFD8E3F84}
+	EndGlobalSection
+EndGlobal
