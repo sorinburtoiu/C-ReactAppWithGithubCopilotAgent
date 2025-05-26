@@ -1,0 +1,45 @@
+# GitHub Actions workflow for building and deploying the .NET backend to Azure Web App
+# Place this file in .github/workflows/dotnet-backend.yml
+
+name: 'Build and Deploy .NET Backend'
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'ReactAppWithGithubCopilotAgent.Server/**'
+      - '.github/workflows/dotnet-backend.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'ReactAppWithGithubCopilotAgent.Server/**'
+      - '.github/workflows/dotnet-backend.yml'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore ReactAppWithGithubCopilotAgent.Server/ReactAppWithGithubCopilotAgent.Server.csproj
+
+      - name: Build
+        run: dotnet build ReactAppWithGithubCopilotAgent.Server/ReactAppWithGithubCopilotAgent.Server.csproj --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish ReactAppWithGithubCopilotAgent.Server/ReactAppWithGithubCopilotAgent.Server.csproj --configuration Release --output ./publish --no-build
+
+      # Azure Web App Deploy (requires AZURE_WEBAPP_PUBLISH_PROFILE secret)
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ./publish
