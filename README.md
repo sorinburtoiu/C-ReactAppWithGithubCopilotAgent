@@ -1,9 +1,9 @@
-# ReactAppWithGithubCopilotAgent
+# React SPA App with ASP.NEt Core backend generated with Github Copilot Agent Mode
 
 ## Overview
 
 This project is a full-stack web application built with a modern .NET and React architecture, designed for scalability, maintainability, and cloud readiness.
-
+It was generated with Github Copilot Agent
 ---
 
 ## Solution Structure
