@@ -51,7 +51,7 @@ function App() {
 
     return (
         <div className={getBackgroundClassByTemperature() + ' bg-image'}>
-            <h1 id="tableLabel">Weather forecast</h1>
+            <h1 id="tableLabel">React Weather forecast</h1>
             <p>This component demonstrates fetching data from the server.</p>
             {contents}
             <button className="refresh-btn" onClick={populateWeatherData}>
