@@ -137,6 +137,8 @@ You can extend GitHub Copilot's capabilities in Visual Studio by enabling Agent 
    - Try prompts like: `list issues assigned to me on GitHub`.
    - When Copilot requests permission to use a tool, select the desired approval scope.
 
+> **Note:** To use MCP (Model Context Protocol) features in Visual Studio or Visual Studio Code, Docker must be running on your machine. MCP servers are typically started as Docker containers, and the configuration expects Docker to be available and running.
+
 #### More Information
 - [Official documentation](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022)
 - [GitHub MCP server repository](https://github.com/github/github-mcp-server)
@@ -200,6 +202,8 @@ Visual Studio Code also supports Agent Mode and MCP integration, allowing you to
    - Select the tools you want to enable (e.g., `list_issues`).
    - Try prompts such as: `list issues assigned to me on GitHub`.
    - Approve tool usage when Copilot requests permission.
+
+> **Note:** To use MCP (Model Context Protocol) features in Visual Studio or Visual Studio Code, Docker must be running on your machine. MCP servers are typically started as Docker containers, and the configuration expects Docker to be available and running.
 
 #### More Information
 - [Official documentation](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022)
