@@ -34,7 +34,10 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
     }
 }
 
-const target = env["services__reactappwithgithubcopilotagent-server__https__0"] ?? 'http://localhost:5280';
+// Old proxy target (HTTP):
+// const target = env["services__reactappwithgithubcopilotagent-server__https__0"] ?? 'http://localhost:5280';
+// Updated proxy target (HTTPS):
+const target = 'https://localhost:7130';
 
 // https://vitejs.dev/config/
 export default defineConfig({
