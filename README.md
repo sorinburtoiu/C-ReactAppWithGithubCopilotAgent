@@ -212,6 +212,14 @@ Visual Studio Code also supports Agent Mode and MCP integration, allowing you to
 
 ---
 
+## Backend API in Swagger UI
+
+The image below shows the backend API (WeatherForecast) exposed and documented in Swagger UI:
+
+![Backend Swagger UI](doc/backend-swagger.png)
+
+---
+
 ## References
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
