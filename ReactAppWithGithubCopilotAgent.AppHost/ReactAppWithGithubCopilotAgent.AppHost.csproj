@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ReactAppWithGithubCopilotAgent.Server\ReactAppWithGithubCopilotAgent.Server.csproj" />
+    <ProjectReference Include="..\reactappwithgithubcopilotagent.client\reactappwithgithubcopilotagent.client.esproj" />
   </ItemGroup>
 
 </Project>
